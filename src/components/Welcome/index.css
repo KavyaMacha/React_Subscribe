@@ -1,0 +1,43 @@
+/* index.css */
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #1e293b;
+  color: #ffffff;
+  font-family: 'Bree Serif', serif;
+  text-align: center;
+}
+
+.greeting {
+  font-size: 48px; /* Further increased font size */
+  margin-bottom: 24px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Added text shadow */
+}
+
+.subscription-button {
+  background-color: #f0bb03;
+  color: #1e293b;
+  border: none;
+  padding: 15px 40px; /* Increased padding */
+  font-size: 20px; /* Increased font size */
+  cursor: pointer;
+  border-radius: 8px; /* Further increased border radius */
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease; /* Added transform transition */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added box shadow */
+}
+
+.subscription-button:hover {
+  background-color: #e0a302;
+  transform: translateY(-2px); /* Added slight upward movement on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increased shadow on hover */
+}
+
+.subscription-button:active {
+  transform: translateY(0); /* Remove upward movement on click */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Restore shadow on click */
+}
